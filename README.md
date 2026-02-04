@@ -30,3 +30,10 @@ This section contains structured content for topics that lend themselves to clas
 
 This section includes miscellaneous notes about a variety of topics.  We have tried to put related items in close proximity, however the data we work with often defies hierarchies.  The organization of this section is intentionally flat, however we will consider migrating content into hierarchical structures in the "Topics" section above in cases where this makes sense.
 
+### Note 1 headline
+
+Some text about note 1
+
+### Note 2 headline
+
+Some text about note 2
