@@ -32,55 +32,61 @@ In some contexts, “sector” may be used loosely to describe groupings such as
 Industry refers to the type of economic activity conducted by an establishment, based on what the business produces or the service it provides. Industry classifications in MORPC products typically follow the North American Industry Classification System (NAICS), a hierarchical system jointly developed by U.S., Canadian, and Mexican statistical agencies. NAICS allows industries to be analyzed at varying levels of detail (e.g., 2-digit sectors through 6-digit detailed industries). Industry-based data are commonly sourced from the Bureau of Labor Statistics Quarterly Census of Employment and Wages (QCEW), the U.S. Census Bureau County Business Patterns (CBP), and The American Community Survey (ACS).
 
 Industry is frequently used to refer to high-level groupings that typically corresponding to the 2-digit NAICS level (e.g., Manufacturing, Health Care and Social Assistance). (NAICS codes are updated every 5-years, crosswalks are needed for converting between each 5-year period. [North American Industry Classification System - 2022](url) )
-Industry #	Definition
-11	        Agriculture, Forestry, Fishing and Hunting
-21        	Mining, Quarrying, and Oil and Gas Extraction
-22        	Utilities
-23        	Construction
-31-33	      Manufacturing
-42	        Wholesale Trade
-44-45	      Retail Trade
-48-49	      Transportation and Warehousing
-51	        Information
-52	        Finance and Insurance
-53	        Real Estate and Rental and Leasing
-54	        Professional, Scientific, and Technical Services
-55	        Management of Companies and Enterprises
-56	        Administrative and Support and Waste Management and Remediation Services
-61	        Educational Services
-62	        Health Care and Social Assistance
-71	        Arts, Entertainment, and Recreation
-72	        Accommodation and Food Services
-81	        Other Services (except Public Administration)
-92      	  Public Administration
+
+Sector	Definition
+11	Agriculture, Forestry, Fishing and Hunting
+21	Mining, Quarrying, and Oil and Gas Extraction
+22	Utilities
+23	Construction
+31-33	Manufacturing
+42	Wholesale Trade
+44-45	Retail Trade
+48-49	Transportation and Warehousing
+51	Information
+52	Finance and Insurance
+53	Real Estate and Rental and Leasing
+54	Professional, Scientific, and Technical Services
+55	Management of Companies and Enterprises
+56	Administrative and Support and Waste Management and Remediation Services
+61	Educational Services
+62	Health Care and Social Assistance
+71	Arts, Entertainment, and Recreation
+72	Accommodation and Food Services
+81	Other Services (except Public Administration)
+92	Public Administration
+<img width="161" height="505" alt="image" src="https://github.com/user-attachments/assets/ec427d5d-b4f4-41ba-8c6e-3b0874e72c95" />
+
 
 Occupation refers to the type of work performed by an individual worker, regardless of the industry in which they are employed. Occupational classifications typically follow the Standard Occupational Classification (SOC) system. Occupation-based data are most often derived from household surveys such as the American Community Survey (ACS) or the Current Population Survey (CPS). Because occupations are person-based rather than establishment-based, occupation data are generally tied to place of residence rather than place of work unless otherwise specified.
 
 BLS source: ([Standard Occupational Classification and Coding Structure 2018](url))
-Code	    Title
-11-0000	  Management Occupations
-13-0000  	Business and Financial Operations Occupations
-15-0000  	Computer and Mathematical Occupations
-17-0000  	Architecture and Engineering Occupations
-19-0000  	Life, Physical. and Social Science Occupations
-21-0000  	Community and Social Service Occupations
-23-0000  	Legal Occupations
-25-0000  	Educational Inustruction and Library Occupations
-27-0000  	Arts. Design, Entertainment, Sports. and Media Occupations
-29-0000  	Healthcare Practitioners and Technical Occupations
-31-0000  	Healthcare Support Occupations
-33-0000  	Protective Service Occupations
-35-0000  	Food Preparation and Serving Related Occupations
-37-0000  	Building and Grounds Cleaning and Maintenance Occupations
-39-0000  	Personal Care and Service Occupations
-41-0000  	Sales and Related Occupations
-43-0000  	Office and Administrative Support Occupations
-45-0000  	Farming. Fishing. and Forestry Occupations
-47-0000  	Construction and Extraction
-49-0000  	Installation, Maintenance, and Repair Occupations
-51-0000  	Production Occupations
-53-0000  	Transportation and Material Moving Occupations
-55-0000  	Military Specific Occupations
+
+Code	Title
+11-0000	Management Occupations
+13-0000	Business and Financial Operations Occupations
+15-0000	Computer and Mathematical Occupations
+17-0000	Architecture and Engineering Occupations
+19-0000	Life, Physical. and Social Science Occupations
+21-0000	Community and Social Service Occupations
+23-0000	Legal Occupations
+25-0000	Educational Inustruction and Library Occupations
+27-0000	Arts. Design, Entertainment, Sports. and Media Occupations
+29-0000	Healthcare Practitioners and Technical Occupations
+31-0000	Healthcare Support Occupations
+33-0000	Protective Service Occupations
+35-0000	Food Preparation and Serving Related Occupations
+37-0000	Building and Grounds Cleaning and Maintenance Occupations
+39-0000	Personal Care and Service Occupations
+41-0000	Sales and Related Occupations
+43-0000	Office and Administrative Support Occupations
+45-0000	Farming. Fishing. and Forestry Occupations
+47-0000	Construction and Extraction
+49-0000	Installation, Maintenance, and Repair Occupations
+51-0000	Production Occupations
+53-0000	Transportation and Material Moving Occupations
+55-0000	Military Specific Occupations
+<img width="529" height="577" alt="image" src="https://github.com/user-attachments/assets/adc17013-2f29-4def-9b20-bd1b030e919a" />
+
 
 
 ### Inflation Adjustments
