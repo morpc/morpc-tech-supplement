@@ -31,11 +31,11 @@ In some contexts, “sector” may be used loosely to describe groupings such as
 
 Industry refers to the type of economic activity conducted by an establishment, based on what the business produces or the service it provides. Industry classifications in MORPC products typically follow the North American Industry Classification System (NAICS), a hierarchical system jointly developed by U.S., Canadian, and Mexican statistical agencies. NAICS allows industries to be analyzed at varying levels of detail (e.g., 2-digit sectors through 6-digit detailed industries). Industry-based data are commonly sourced from the Bureau of Labor Statistics Quarterly Census of Employment and Wages (QCEW), the U.S. Census Bureau County Business Patterns (CBP), and The American Community Survey (ACS).
 
-Industry is frequently used to refer to high-level groupings that typically corresponding to the 2-digit NAICS level (e.g., Manufacturing, Health Care and Social Assistance). (NAICS codes are updated every 5-years, crosswalks are needed for converting between each 5-year period. [North American Industry Classification System - 2022](https://www.census.gov/naics/?58967?yearbck=2022) )
+Industry is frequently used to refer to high-level groupings that typically corresponding to the 2-digit NAICS level (e.g., Manufacturing, Health Care and Social Assistance). (NAICS codes are updated every 5-years, crosswalks are needed for converting between each 5-year period. [North American Industry Classification System - 2022](https://www.census.gov/naics/?58967?yearbck=2022)
 
 Occupation refers to the type of work performed by an individual worker, regardless of the industry in which they are employed. Occupational classifications typically follow the Standard Occupational Classification (SOC) system. Occupation-based data are most often derived from household surveys such as the American Community Survey (ACS) or the Current Population Survey (CPS). Because occupations are person-based rather than establishment-based, occupation data are generally tied to place of residence rather than place of work unless otherwise specified.
 
-BLS source: [Standard Occupational Classification and Coding Structure 2018]((https://www.bls.gov/soc/2018/soc_2018_whats_new.pdf))
+BLS source: [Standard Occupational Classification and Coding Structure 2018](https://www.bls.gov/soc/2018/soc_2018_whats_new.pdf)
 
 ### Inflation Adjustments
 
