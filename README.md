@@ -31,11 +31,15 @@ In some contexts, “sector” may be used loosely to describe groupings such as
 
 Industry refers to the type of economic activity conducted by an establishment, based on what the business produces or the service it provides. Industry classifications in MORPC products typically follow the North American Industry Classification System (NAICS), a hierarchical system jointly developed by U.S., Canadian, and Mexican statistical agencies. NAICS allows industries to be analyzed at varying levels of detail (e.g., 2-digit sectors through 6-digit detailed industries). Industry-based data are commonly sourced from the Bureau of Labor Statistics Quarterly Census of Employment and Wages (QCEW), the U.S. Census Bureau County Business Patterns (CBP), and The American Community Survey (ACS).
 
-Industry is frequently used to refer to high-level groupings that typically corresponding to the 2-digit NAICS level (e.g., Manufacturing, Health Care and Social Assistance). (NAICS codes are updated every 5-years, crosswalks are needed for converting between each 5-year period. [North American Industry Classification System - 2022](https://www.census.gov/naics/?58967?yearbck=2022)
+Industry is frequently used to refer to high-level groupings that typically corresponding to the 2-digit NAICS level (e.g., Manufacturing, Health Care and Social Assistance). (NAICS codes are updated every 5-years, crosswalks are needed for converting between each 5-year period. [North American Industry Classification System - 2022](https://www.bls.gov/cew/classifications/industry/industry-titles.htm)
 
-Occupation refers to the type of work performed by an individual worker, regardless of the industry in which they are employed. Occupational classifications typically follow the Standard Occupational Classification (SOC) system. Occupation-based data are most often derived from household surveys such as the American Community Survey (ACS) or the Current Population Survey (CPS). Because occupations are person-based rather than establishment-based, occupation data are generally tied to place of residence rather than place of work unless otherwise specified.
+**[QCEW Data Files](https://www.bls.gov/cew/downloadable-data-files.htm)**
 
-BLS source: [Standard Occupational Classification and Coding Structure 2018](https://www.bls.gov/soc/2018/soc_2018_whats_new.pdf)
+Occupation refers to the type of work performed by an individual worker, regardless of the industry in which they are employed. Occupational classifications typically follow the Standard Occupational Classification (SOC) system. Occupation-based data are most often derived from household surveys such as - The American Community Survey (ACS) Tables; **S2401** (Occupation), **S2405** (Industry by Occupation), **S2406** (Occupation by Class of Worker) - or the Current Population Survey (CPS). Because occupations are person-based rather than establishment-based, occupation data are generally tied to place of residence rather than place of work unless otherwise specified.
+
+[Standard Occupational Classification and Coding Structure 2018](https://www.bls.gov/soc/2018/soc_2018_whats_new.pdf)
+**[SOC - Occupational Employment and Wage Statistics](https://www.bls.gov/oes/tables.htm)**
+
 
 ### Inflation Adjustments
 
@@ -43,7 +47,7 @@ When working with variables expressed in dollar terms, MORPC will often adjust v
 
 In most circumstances, dollar values are adjusted to the **most recent year available in the underlying dataset**, rather than the current calendar year. In some cases; such as long-term trend analyses or comparisons across multiple reports, values may be adjusted to a fixed reference year. The chosen inflation adjustment year will be explicitly stated in the primary document.
 
-Inflation adjustments are calculated using the Bureau of Labor Statistics **Consumer Price Index for All Urban Consumers (CPI-U), U.S. City Average**, annual average, not seasonally adjusted. MORPC uses Series ID **CUUR0000SA0**, which has a base period of 1982–84 = 100. Annual averages are calculated by averaging the monthly CPI values for each year.
+Inflation adjustments are calculated using the Bureau of Labor Statistics **Consumer Price Index for All Urban Consumers (CPI-U), U.S. City Average**, annual average, not seasonally adjusted. MORPC uses Series ID [**CUUR0000SA0**](https://data.bls.gov/pdq/SurveyOutputServlet), which has a base period of 1982–84 = 100. Annual averages are calculated by averaging the monthly CPI values for each year.
 
 The general formula used is:
 **Adjusted Dollar Value = Original Dollar Value × (CPI of target year ÷ CPI of original year)**
@@ -58,9 +62,10 @@ The **Federal Poverty Level (FPL)** is the income threshold developed annually b
 The HHS poverty guidelines, or percentage multiples of them (eg: 50 percent, 100 percent, 125 percent, 150 percent, 185 percent, 200 percent, or 400 percent), are used as means-tested criterion to determin individuals or households eligibility for a number of state and federal programs. Program eligibility thresholds often exceed 100% FPL and may incorporate additional rules such as asset tests, categorical eligibility, or deductions. 
 
 When income is expressed as a percentage of FPL,
-1. The poverty level is expressed as a percentage by dividing the household income by the stated income value for the family/household size that represents that year's Federal Poverty Level. A household making exactly the value for their household size for the federal poverty level would equal 100%, whereas a household income less than the FPL will be less than 100% and incomes above will be greater than.  
+1. The poverty level is calculated by dividing the household income by the stated income value for the family/household size that represents that year's Federal Poverty Level. A household making exactly the value for their household size for the federal poverty level would equal 100%, whereas a household income less than the FPL will be less than 100% and incomes above will be greater than.  
 2. The value should be interpreted as a relative measure rather than a definitive indicator of economic hardship or self-sufficiency. 
 
+MORPC frequently makes use of Ameircan Community Survey (ACS) tables that detail the Ratio of Income to Poverty Level in the Past 12 Months. These tables are in the B- & C-17 table sets, specifically: **C17002** (5-year estimates available, Universe: Population for whom poverty status is determined), **B17002** (1-year estimates only, Universe: Population for whom poverty status is determined), and **B17026** (1- & 5-year estimates available, Universe: Families).
 
 ### Housing Cost Burden
 
@@ -70,7 +75,8 @@ Housing costs generally include:
 * For renters: gross rent (contract rent plus utilities)
 * For homeowners: mortgage payments, property taxes, insurance, utilities, and selected fees
 
-MORPC commonly relies on the U.S. Census Bureau’s American Community Survey (ACS) for housing cost burden estimates. These values are self-reported and reflect typical monthly expenses rather than exact accounting records.
+MORPC commonly relies on the U.S. Census Bureau’s American Community Survey (ACS) for housing cost burden estimates. These values are self-reported and reflect typical monthly expenses rather than exact accounting records. 
+ACS Tables: **B25140** (by tenure), **B25106** (tenure by household income).
 
 Housing cost burden is a useful screening metric but has limitations. It does not account for differences in household size, debt obligations outside of housing, or regional cost-of-living factors beyond housing. As a result, households with similar cost burden ratios may experience very different levels of financial stress.
 
@@ -91,8 +97,9 @@ This ratio is a simplified indicator and does not account for interest rates, do
 ### Education Attainment
 
 Educational attainment refers to the highest level of education completed by an individual, typically measured for the population aged 25 and older. MORPC generally relies on the American Community Survey (ACS) for educational attainment data.
+ACS Tables: **B15003**, **B15002 A-I**
 
-Common attainment categories include:
+Common educational attainment combined categories include:
 * Less than a high school diploma or equivalent
 * High school diploma, GED, or equivalent
 * Some College
@@ -104,7 +111,12 @@ Educational attainment can be used to evaluate workforce skill levels, earnings 
 
 ### Race and Ethnicity
 
+Race and ethnicity data used by MORPC is primarily drawn from two sources: The American Community Survey (table: **B03002**) and Census PEP (***SOURCE***). 
+Race captures one or more categories such as White, Black or African American, Asian, American Indian or Alaska Native, Native Hawaiian or Other Pacific Islander, or Some Other Race. While ethnicity indicates whether a person is of Hispanic or Latino origin, regardless of race.
 
+When reporting race and ethnicity, MORPC may present mutually exclusive categories (e.g., “Non-Hispanic White”), allow for multiracial identification, and/or different combinations of racial and ethicity demographics to make the tables or figures more easily digestible depending on analytical needs and data constraints. Small sample sizes, disclosure avoidance techniques, and category aggregation can affect the precision and comparability of race and ethnicity estimates, particularly for smaller geographies.
+
+Race and ethnicity variables are social constructs and should be interpreted as reflecting self-identification rather than biological or genetic distinctions.
 
 ### Topics
 
