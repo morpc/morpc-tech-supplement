@@ -47,7 +47,7 @@ When working with variables expressed in dollar terms, MORPC will often adjust v
 
 In most circumstances, dollar values are adjusted to the **most recent year available in the underlying dataset**, rather than the current calendar year. In some cases; such as long-term trend analyses or comparisons across multiple reports, values may be adjusted to a fixed reference year. The chosen inflation adjustment year will be explicitly stated in the primary document.
 
-Inflation adjustments are calculated using the Bureau of Labor Statistics **Consumer Price Index for All Urban Consumers (CPI-U), U.S. City Average**, annual average, not seasonally adjusted. MORPC uses Series ID [**CUUR0000SA0**](https://data.bls.gov/pdq/SurveyOutputServlet), which has a base period of 1982–84 = 100. Annual averages are calculated by averaging the monthly CPI values for each year.
+Inflation adjustments are calculated using the Bureau of Labor Statistics **Consumer Price Index for All Urban Consumers (CPI-U), U.S. City Average**, annual average, not seasonally adjusted. MORPC uses Series ID [**CUUR0000SA0**](https://data.bls.gov/pdq/SurveyOutputServlet](https://data.bls.gov/timeseries/CUUR0000SA0)), which has a base period of 1982–84 = 100. Annual averages are calculated by averaging the monthly CPI values for each year.
 
 The general formula used is:
 **Adjusted Dollar Value = Original Dollar Value × (CPI of target year ÷ CPI of original year)**
