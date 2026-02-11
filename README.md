@@ -53,7 +53,7 @@ Because CPI represents average price changes across a broad basket of goods and 
 
 ### Federal Poverty Level (FPL)
 
-The **Federal Poverty Level (FPL)** is the income threshold developed annually by the U.S. Department of Health and Human Services [Federal Poverty Guidelines]((https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines))] (HHS). This threshold varies based on household size; the larger the household size, the higher the household income can be for determining the households FPL.
+The **Federal Poverty Level (FPL)** is the income threshold developed annually by the U.S. Department of Health and Human Services [Federal Poverty Guidelines](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines) (HHS). This threshold varies based on household size; the larger the household size, the higher the household income can be for determining the households FPL.
 
 The HHS poverty guidelines, or percentage multiples of them (eg: 50 percent, 100 percent, 125 percent, 150 percent, 185 percent, 200 percent, or 400 percent), are used as means-tested criterion to determin individuals or households eligibility for a number of state and federal programs. Program eligibility thresholds often exceed 100% FPL and may incorporate additional rules such as asset tests, categorical eligibility, or deductions. 
 
