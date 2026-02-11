@@ -31,11 +31,11 @@ In some contexts, “sector” may be used loosely to describe groupings such as
 
 Industry refers to the type of economic activity conducted by an establishment, based on what the business produces or the service it provides. Industry classifications in MORPC products typically follow the North American Industry Classification System (NAICS), a hierarchical system jointly developed by U.S., Canadian, and Mexican statistical agencies. NAICS allows industries to be analyzed at varying levels of detail (e.g., 2-digit sectors through 6-digit detailed industries). Industry-based data are commonly sourced from the Bureau of Labor Statistics Quarterly Census of Employment and Wages (QCEW), the U.S. Census Bureau County Business Patterns (CBP), and The American Community Survey (ACS).
 
-Industry is frequently used to refer to high-level groupings that typically corresponding to the 2-digit NAICS level (e.g., Manufacturing, Health Care and Social Assistance). (NAICS codes are updated every 5-years, crosswalks are needed for converting between each 5-year period. [North American Industry Classification System - 2022](url) )
+Industry is frequently used to refer to high-level groupings that typically corresponding to the 2-digit NAICS level (e.g., Manufacturing, Health Care and Social Assistance). (NAICS codes are updated every 5-years, crosswalks are needed for converting between each 5-year period. [North American Industry Classification System - 2022](https://www.census.gov/naics/?58967?yearbck=2022) )
 
 Occupation refers to the type of work performed by an individual worker, regardless of the industry in which they are employed. Occupational classifications typically follow the Standard Occupational Classification (SOC) system. Occupation-based data are most often derived from household surveys such as the American Community Survey (ACS) or the Current Population Survey (CPS). Because occupations are person-based rather than establishment-based, occupation data are generally tied to place of residence rather than place of work unless otherwise specified.
 
-BLS source: ([Standard Occupational Classification and Coding Structure 2018](url))
+BLS source: [Standard Occupational Classification and Coding Structure 2018]((https://www.bls.gov/soc/2018/soc_2018_whats_new.pdf))
 
 ### Inflation Adjustments
 
@@ -53,21 +53,9 @@ Because CPI represents average price changes across a broad basket of goods and 
 
 ### Federal Poverty Level (FPL)
 
-The **Federal Poverty Level (FPL)** is the income threshold developed annually by the U.S. Department of Health and Human Services[[https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines](url)] (HHS). This threshold varies based on household size; the larger the household size, the higher the household income can be for determining the households FPL.
+The **Federal Poverty Level (FPL)** is the income threshold developed annually by the U.S. Department of Health and Human Services [Federal Poverty Guidelines]((https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines))] (HHS). This threshold varies based on household size; the larger the household size, the higher the household income can be for determining the households FPL.
 
 The HHS poverty guidelines, or percentage multiples of them (eg: 50 percent, 100 percent, 125 percent, 150 percent, 185 percent, 200 percent, or 400 percent), are used as means-tested criterion to determin individuals or households eligibility for a number of state and federal programs. Program eligibility thresholds often exceed 100% FPL and may incorporate additional rules such as asset tests, categorical eligibility, or deductions. 
-
-**Current FPL (100% FPL)**
-Family size	          2024 income numbers	    2025 income numbers	    2026 income numbers
-For individuals	      $15,060 	              $15,650 	              $15,960 
-For a family of 2	    $20,440 	              $21,150 	              $21,640 
-For a family of 3	    $25,820 	              $26,650 	              $27,320 
-For a family of 4	    $31,200 	              $32,150 	              $33,000 
-For a family of 5	    $36,580 	              $37,650 	              $38,680 
-For a family of 6	    $41,960 	              $43,150 	              $44,360 
-For a family of 7	    $47,340 	              $48,650 	              $50,040 
-For a family of 8	    $52,720 	              $54,150 	              $55,720 
-For a family of 9+  	+$5,380 each person	    +$5,500 each person     +$5,680 each person
 
 When income is expressed as a percentage of FPL,
 1. The poverty level is expressed as a percentage by dividing the household income by the stated income value for the family/household size that represents that year's Federal Poverty Level. A household making exactly the value for their household size for the federal poverty level would equal 100%, whereas a household income less than the FPL will be less than 100% and incomes above will be greater than.  
