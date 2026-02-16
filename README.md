@@ -5,12 +5,12 @@ This document is intended to provide technical details and interpretation guidan
 
 ## Variable/concept definitions
 
-This section includes guidance useful for understanding what we mean when we refer to a specific variable or concept.  We try to be consistent in our usage of these terms, however sometimes circumstances for us to assign different meanings from what is listed below.  Be sure to read the text that accompanies the data and note any divergence from these definitions.  The terms are organized in alphabetical order.
+This section includes guidance useful for understanding what we mean when we refer to a specific variable or concept.  We try to be consistent in our usage of these terms, however sometimes circumstances force us to assign different meanings from what is listed below.  Be sure to read the text that accompanies the data and note any divergence from these definitions.  The terms are organized in alphabetical order.
 
 
 ### Employment/employed/unemployed
 
-When we refer to employment, we are typically referring to persons who have a job (i.e. "employed") or who are actively seeking to have a job (i.e. "unemployed").  In constrast to the term "jobs" (see below), which refers to people in the place where they work, employment typically refers to the person in the place where they live.  The collection of people who are employed and unemployed is referred to as the "labor force".  Persons who do not have a job and who are not seeking to have a job are not included in the labor force. Typically, we account for persons in the labor force, both employed and unemployed, using data from the Bureau of Labor Statistics [Local Area Unemployment Statistics](https://www.bls.gov/lau/) (LAUS).  The data included in LAUS come from a regular Census Bureau survey of U.S. households called the [Current Population Survey](https://www.census.gov/programs-surveys/cps.html)
+When we refer to employment, we are typically referring to persons who have a job (i.e. "employed") or who are actively seeking to have a job (i.e. "unemployed").  In contrast to the term "jobs" (see below), which refers to people in the place where they work, "employment" typically refers to the person in the place where they live.  The collection of people who are employed and unemployed is referred to as the "labor force".  Persons who do not have a job and who are not seeking to have a job are not included in the labor force. Typically, we account for persons in the labor force, both employed and unemployed, using data from the Bureau of Labor Statistics [Local Area Unemployment Statistics](https://www.bls.gov/lau/) (LAUS).  The data included in LAUS come from a regular Census Bureau survey of U.S. households called the [Current Population Survey](https://www.census.gov/programs-surveys/cps.html)
 
 Another common source of employment information is the Census Bureau's [American Community Survey](https://www.census.gov/programs-surveys/acs/).  There are several tables which are useful for capturing the employment details of persons at their place of residence, and these tables are [summarized nicely on the Census Reporter website](https://censusreporter.org/topics/employment/).
 
@@ -31,21 +31,24 @@ In some contexts, “sector” may be used loosely to describe groupings such as
 
 Industry refers to the type of economic activity conducted by an establishment, based on what the business produces or the service it provides. Industry classifications in MORPC products typically follow the North American Industry Classification System (NAICS), a hierarchical system jointly developed by U.S., Canadian, and Mexican statistical agencies. NAICS allows industries to be analyzed at varying levels of detail (e.g., 2-digit sectors through 6-digit detailed industries). Industry-based data are commonly sourced from the Bureau of Labor Statistics Quarterly Census of Employment and Wages (QCEW), the U.S. Census Bureau County Business Patterns (CBP), and The American Community Survey (ACS).
 
-Industry is frequently used to refer to high-level groupings that typically corresponding to the 2-digit NAICS level (e.g., Manufacturing, Health Care and Social Assistance). (NAICS codes are updated every 5-years, crosswalks are needed for converting between each 5-year period. [North American Industry Classification System - 2022](https://www.bls.gov/cew/classifications/industry/industry-titles.htm)
+Industry is frequently used to refer to high-level groupings that typically corresponding to the 2-digit NAICS level (e.g., Manufacturing, Health Care and Social Assistance). (NAICS codes are updated every 5-years, crosswalks are needed for converting between each 5-year period. 
 
-**[QCEW Data Files](https://www.bls.gov/cew/downloadable-data-files.htm)**
+Industry classification details: [North American Industry Classification System - 2022](https://www.bls.gov/cew/classifications/industry/industry-titles.htm)
+
+Example industry-based datasets: [QCEW Data Files](https://www.bls.gov/cew/downloadable-data-files.htm)
 
 Occupation refers to the type of work performed by an individual worker, regardless of the industry in which they are employed. Occupational classifications typically follow the Standard Occupational Classification (SOC) system. Occupation-based data are most often derived from household surveys such as - The American Community Survey (ACS) Tables; **S2401** (Occupation), **S2405** (Industry by Occupation), **S2406** (Occupation by Class of Worker) - or the Current Population Survey (CPS). Because occupations are person-based rather than establishment-based, occupation data are generally tied to place of residence rather than place of work unless otherwise specified.
 
-[Standard Occupational Classification and Coding Structure 2018](https://www.bls.gov/soc/2018/soc_2018_whats_new.pdf)
-**[SOC - Occupational Employment and Wage Statistics](https://www.bls.gov/oes/tables.htm)**
+Occupation classification details: [Standard Occupational Classification and Coding Structure 2018](https://www.bls.gov/soc/2018/soc_2018_whats_new.pdf)
+
+Example occupation-based datasets: [SOC - Occupational Employment and Wage Statistics](https://www.bls.gov/oes/tables.htm)
 
 
 ### Inflation Adjustments
 
 When working with variables expressed in dollar terms, MORPC will often adjust values for inflation to improve comparability across time. Unless otherwise noted, inflation-adjusted values should be interpreted as representing constant purchasing power rather than nominal dollars.
 
-In most circumstances, dollar values are adjusted to the **most recent year available in the underlying dataset**, rather than the current calendar year. In some cases; such as long-term trend analyses or comparisons across multiple reports, values may be adjusted to a fixed reference year. The chosen inflation adjustment year will be explicitly stated in the primary document.
+In most circumstances, dollar values are adjusted to the **most recent year available in the underlying dataset**, rather than the current calendar year. In some cases, such as long-term trend analyses or comparisons across multiple reports, values may be adjusted to a fixed reference year. The chosen inflation adjustment year will be explicitly stated in the primary document.
 
 Inflation adjustments are calculated using the Bureau of Labor Statistics **Consumer Price Index for All Urban Consumers (CPI-U), U.S. City Average**, annual average, not seasonally adjusted. MORPC uses Series ID [**CUUR0000SA0**](https://data.bls.gov/timeseries/CUUR0000SA0), which has a base period of 1982–84 = 100. Annual averages are calculated by averaging the monthly CPI values for each year.
 
@@ -59,17 +62,17 @@ Because CPI represents average price changes across a broad basket of goods and 
 
 The **Federal Poverty Level (FPL)** is the income threshold developed annually by the U.S. Department of Health and Human Services [Federal Poverty Guidelines](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines) (HHS). This threshold varies based on household size; the larger the household size, the higher the household income can be for determining the households FPL.
 
-The HHS poverty guidelines, or percentage multiples of them (eg: 50 percent, 100 percent, 125 percent, 150 percent, 185 percent, 200 percent, or 400 percent), are used as means-tested criterion to determin individuals or households eligibility for a number of state and federal programs. Program eligibility thresholds often exceed 100% FPL and may incorporate additional rules such as asset tests, categorical eligibility, or deductions. 
+The HHS poverty guidelines, or percentage multiples of them (eg: 50 percent, 100 percent, 125 percent, 150 percent, 185 percent, 200 percent, or 400 percent), are used as means-tested criterion to determine individuals' or households' eligibility for a number of state and federal programs. Program eligibility thresholds often exceed 100% FPL and may incorporate additional rules such as asset tests, categorical eligibility, or deductions. 
 
 When income is expressed as a percentage of FPL,
 1. The poverty level is calculated by dividing the household income by the stated income value for the family/household size that represents that year's Federal Poverty Level. A household making exactly the value for their household size for the federal poverty level would equal 100%, whereas a household income less than the FPL will be less than 100% and incomes above will be greater than.  
 2. The value should be interpreted as a relative measure rather than a definitive indicator of economic hardship or self-sufficiency. 
 
-MORPC frequently makes use of Ameircan Community Survey (ACS) tables that detail the Ratio of Income to Poverty Level in the Past 12 Months. These tables are in the B- & C-17 table sets, specifically: **C17002** (5-year estimates available, Universe: Population for whom poverty status is determined), **B17002** (1-year estimates only, Universe: Population for whom poverty status is determined), and **B17026** (1- & 5-year estimates available, Universe: Families).
+MORPC frequently makes use of American Community Survey (ACS) tables that detail the Ratio of Income to Poverty Level in the Past 12 Months. These tables are in the B- & C-17 table sets, specifically: **C17002** (5-year estimates available, Universe: Population for whom poverty status is determined), **B17002** (1-year estimates only, Universe: Population for whom poverty status is determined), and **B17026** (1- & 5-year estimates available, Universe: Families).
 
 ### Housing Cost Burden
 
-**Housing cost burden** refers to the share of a household’s income that is spent on housing-related costs. A household is typically considered *cost-burdened* if housing costs exceed **30% of gross household income**, and ***severely cost-burdened*** if housing costs exceed **50%**.
+**Housing cost burden** refers to the share of a household’s income that is spent on housing-related costs. A household is typically considered *cost-burdened* if housing costs exceed **30% of gross household income** and **severely cost-burdened** if housing costs exceed **50%**.
 
 Housing costs generally include:
 * For renters: gross rent (contract rent plus utilities)
@@ -89,7 +92,7 @@ The **home sale price to income ratio** is a measure of housing affordability fo
 
 Higher ratios indicate reduced affordability, as households must devote a larger share of income to purchase a home. MORPC derives median home price from accessing the Central Ohio MLS data for real estate transactions and income data from the ACS.
 
-Generally, a ratio that is less than 2.6 is considered "affordable", between 2.6 and 4 as "oderately unaffordable" and above 4 as "unaffordable".
+Generally, a ratio that is less than 2.6 is considered "affordable", between 2.6 and 4 as "moderately unaffordable" and above 4 as "unaffordable".
 
 This ratio is a simplified indicator and does not account for interest rates, down payment requirements, credit access, property taxes, insurance, or household composition. As such, it should be interpreted as a high-level comparative metric rather than a precise measure of homeownership feasibility.
 
@@ -118,7 +121,7 @@ When reporting race and ethnicity, MORPC may present mutually exclusive categori
 
 Race and ethnicity variables are social constructs and should be interpreted as reflecting self-identification rather than biological or genetic distinctions.
 
-### Topics
+## Topics
 
 This section contains structured content for topics that lend themselves to classification.  We will add structured discussion of select topics here when appropriate.  If you don't find what you are looking for here, check the "Miscellaneous notes" section below.
 
