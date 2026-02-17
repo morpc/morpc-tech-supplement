@@ -50,7 +50,9 @@ When working with variables expressed in dollar terms, MORPC will often adjust v
 
 In most circumstances, dollar values are adjusted to the **most recent year available in the underlying dataset**, rather than the current calendar year. In some cases, such as long-term trend analyses or comparisons across multiple reports, values may be adjusted to a fixed reference year. The chosen inflation adjustment year will be explicitly stated in the primary document.
 
-Inflation adjustments are calculated using the Bureau of Labor Statistics **Consumer Price Index for All Urban Consumers (CPI-U), U.S. City Average**, annual average, not seasonally adjusted. MORPC uses Series ID [**CUUR0000SA0**](https://data.bls.gov/timeseries/CUUR0000SA0), which has a base period of 1982–84 = 100. Annual averages are calculated by averaging the monthly CPI values for each year.
+Inflation adjustments are calculated using the Bureau of Labor Statistics **Consumer Price Index for All Urban Consumers (CPI-U), U.S. City Average**, annual average, not seasonally adjusted. MORPC uses Series ID [**CUUR0000SA0**](https://data.bls.gov/timeseries/CUUR0000SA0), which has a base period of 1982–84 = 100. This means that the **average** price level for the three years of 1982, 1983, and 1984 is the reference point for all other CPIs where all other CPI values are experssed as a relative change from that three-year average.
+
+Annual averages are calculated by averaging the monthly CPI values for each year in the CPI data table.
 
 The general formula used is:
 **Adjusted Dollar Value = Original Dollar Value × (CPI of target year ÷ CPI of original year)**
@@ -90,9 +92,13 @@ The **home sale price to income ratio** is a measure of housing affordability fo
 
 **Ratio = Median Home Sale Price ÷ Median Household Income**
 
-Higher ratios indicate reduced affordability, as households must devote a larger share of income to purchase a home. MORPC derives median home price from accessing the Central Ohio MLS data for real estate transactions and income data from the ACS.
+Higher ratios indicate reduced affordability, as households must devote a larger share of income to purchase a home. MORPC derives median home price from accessing the Central Ohio MLS data for real estate transactions and income data from the ACS. . A good rule of thumb, in most parts of the country, is that a homebuyer can afford a home that costs 2.6 years of the household’s income (i.e., a household earning $100,000 could comfortably afford a $260,000 home) [](https://www.inhp.org/wp-content/uploads/2022/10/Housing-Cost-Burden-and-General-Affordability-Ratios_June2022.pdf)
 
 Generally, a ratio that is less than 2.6 is considered "affordable", between 2.6 and 4 as "moderately unaffordable" and above 4 as "unaffordable".
+[Rice University](https://kinder.rice.edu/urbanedge/gap-between-income-growth-and-housing-cost-increases-continues-grow#:~:text=The%20housing%20crash%20seems%20to,steam%20through%20the%20housing%20crisis.%22) 
+[JCHS](https://www.jchs.harvard.edu/blog/home-price-income-ratio-reaches-record-high-0#:~:text=As%20the%20interactive%20shows%2C%20home,3.0%20as%20recently%20as%202000.) 
+[Goman & York](https://www.granby-ct.gov/DocumentCenter/View/159/Understanding-Housing-Markets-and-Affordable-Housing---Economics-and-Financial-Feasibility-PDF)
+
 
 This ratio is a simplified indicator and does not account for interest rates, down payment requirements, credit access, property taxes, insurance, or household composition. As such, it should be interpreted as a high-level comparative metric rather than a precise measure of homeownership feasibility.
 
@@ -114,10 +120,10 @@ Educational attainment can be used to evaluate workforce skill levels, earnings 
 
 ### Race and Ethnicity
 
-Race and ethnicity data used by MORPC is primarily drawn from two sources: The American Community Survey (table: **B03002**) and Census PEP (***SOURCE***). 
+Race and ethnicity data used by MORPC is primarily drawn from two sources: The American Community Survey (table: **B03002**) and [Census PEP](https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-detail.html#v2025). 
 Race captures one or more categories such as White, Black or African American, Asian, American Indian or Alaska Native, Native Hawaiian or Other Pacific Islander, or Some Other Race. While ethnicity indicates whether a person is of Hispanic or Latino origin, regardless of race.
 
-When reporting race and ethnicity, MORPC may present mutually exclusive categories (e.g., “Non-Hispanic White”), allow for multiracial identification, and/or different combinations of racial and ethicity demographics to make the tables or figures more easily digestible depending on analytical needs and data constraints. Small sample sizes, disclosure avoidance techniques, and category aggregation can affect the precision and comparability of race and ethnicity estimates, particularly for smaller geographies.
+When reporting race and ethnicity, MORPC may present mutually exclusive categories (e.g., “Non-Hispanic White” vs "Hispanic White"), allow for multiracial identification, and/or different combinations of racial and ethicity demographics to make the tables or figures more easily digestible depending on analytical needs and data constraints. Small sample sizes, disclosure avoidance techniques, and category aggregation can affect the precision and comparability of race and ethnicity estimates, particularly for smaller geographies.
 
 Race and ethnicity variables are social constructs and should be interpreted as reflecting self-identification rather than biological or genetic distinctions.
 
